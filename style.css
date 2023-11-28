@@ -1,0 +1,12 @@
+.navbar-nav {
+  gap: 10px;
+}
+.hero_section img {
+  object-fit: cover;
+}
+.hero_section {
+  background-color: #7550fe;
+}
+p {
+  color: #bca7ff;
+}
