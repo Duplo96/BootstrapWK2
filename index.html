@@ -19,7 +19,8 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-light-subtle">
+    <!-- NAV -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -89,74 +90,1279 @@
         </div>
       </div>
     </nav>
+    <!-- HERO -->
     <div class="hero_section">
-      <div class="row justify-content-center">
-        <div class="col-12 px-5 col-sm-12 col-md-10 col-lg-5 py-5">
-          <h1 class="text-white pt-4">Welcome Web Students!</h1>
-          <p class="fs-5">
-            Hand-picked Instructor and expertly crafted <br />
-            courses, designed for the modern students and <br />
-            entrepreneur.
-          </p>
-          <div>
-            <button type="button" class="btn btn-success bottone px-4 py-2">
-              Browse Course
-            </button>
-            <button type="button" class="btn btn-light bottone px-3 py-2">
-              Are You Instructor?
-            </button>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-5">
-          <img src="./assets/hero-img.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="down_hero_section container my-3">
-      <div class="text-center">
-        <div class="row align-items-center">
-          <div class="col d-flex align-items-center gap-3">
-            <div
-              class="color_button d-flex justify-content-center align-items-center"
-            >
-              <ion-icon name="videocam-outline"></ion-icon>
-            </div>
-
-            <div class="d-flex flex-column align-items-start pt-3">
-              <strong>30,000 online courses</strong>
-              <p>Enjoy a variety of fresh topics</p>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-sm-12 col-md-10 col-lg-5 py-5">
+            <h1 class="text-white pt-4">Welcome Web Students!</h1>
+            <p class="fs-5">
+              Hand-picked Instructor and expertly crafted <br />
+              courses, designed for the modern students and <br />
+              entrepreneur.
+            </p>
+            <div>
+              <button type="button" class="btn btn-success bottone px-4 py-2">
+                Browse Course
+              </button>
+              <button type="button" class="btn btn-light bottone px-3 py-2">
+                Are You Instructor?
+              </button>
             </div>
           </div>
-          <div class="col d-flex align-items-center gap-3">
-            <div
-              class="color_button d-flex justify-content-center align-items-center"
-            >
-              <ion-icon name="people-outline"></ion-icon>
-            </div>
-
-            <div class="d-flex flex-column align-items-start pt-3">
-              <strong>Expert instruction</strong>
-              <p>Find the right instructor for you</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-center gap-3">
-            <div
-              class="color_button d-flex justify-content-center align-items-center"
-            >
-              <ion-icon name="time-outline"></ion-icon>
-            </div>
-
-            <div class="d-flex flex-column align-items-start pt-3">
-              <strong>Lifetime access</strong>
-              <p>Learn on your schedule</p>
-            </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+            <img src="./assets/hero-img.png" alt="" />
           </div>
         </div>
       </div>
     </div>
-    <div class="bg-light-subtle container">
-      <h3>Recommended to you</h3>
+    <!-- DOWN HERO -->
+    <div class="down_hero_section py-2 shadow-sm">
+      <div class="container">
+        <div class="text-center">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12 d-flex align-items-center gap-3">
+              <div
+                class="color_button d-flex justify-content-center align-items-center"
+              >
+                <ion-icon name="videocam-outline"></ion-icon>
+              </div>
+
+              <div class="d-flex flex-column align-items-start pt-3">
+                <strong>30,000 online courses</strong>
+                <p>Enjoy a variety of fresh topics</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 d-flex align-items-center gap-3">
+              <div
+                class="color_button d-flex justify-content-center align-items-center"
+              >
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+
+              <div class="d-flex flex-column align-items-start pt-3">
+                <strong>Expert instruction</strong>
+                <p>Find the right instructor for you</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 d-flex align-items-center gap-3">
+              <div
+                class="color_button d-flex justify-content-center align-items-center"
+              >
+                <ion-icon name="time-outline"></ion-icon>
+              </div>
+
+              <div class="d-flex flex-column align-items-start pt-3">
+                <strong>Lifetime access</strong>
+                <p>Learn on your schedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- PRIMO CAROSELLO -->
+    <div class="bg-light-subtle container mt-4 position-relative py-5">
+      <h3 class="text-capitalize pt-5">most popular</h3>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner py-3">
+          <div class="carousel-item active">
+            <div class="row justify-content-around">
+              <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-md-none d-lg-block">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-md-none d-lg-block">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+          <span class="visually-hidden"
+            ><ion-icon name="arrow-back-circle-outline"></ion-icon
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next position-absolute top-50 start-100 translate-middle"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- SECONDO CAROSELLO -->
+    <div class="bg-light-subtle container mt-4 position-relative py-5">
+      <h3 class="text-capitalize pt-5">most popular</h3>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner py-3">
+          <div class="carousel-item active">
+            <div class="row justify-content-around">
+              <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-md-none d-lg-block">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-md-none d-lg-block">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+          <span class="visually-hidden"
+            ><ion-icon name="arrow-back-circle-outline"></ion-icon
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next position-absolute top-50 start-100 translate-middle"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- TERZO CAROSELLO -->
+    <div class="bg-light-subtle container mt-4 position-relative py-5">
+      <h3 class="text-capitalize pt-5">most popular</h3>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner py-3">
+          <div class="carousel-item active">
+            <div class="row justify-content-around">
+              <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-md-none d-lg-block">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-md-none d-lg-block">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                  <img
+                    src="./assets/course-javascript.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-capitalize">
+                      a complete beginner's guide to javascript
+                    </h5>
+                    <p class="card-text d-flex align-items-center gap-2">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <span>4h 10m</span>
+                      <span><ion-icon name="cellular"></ion-icon></span>
+                      <span>Advance</span>
+                    </p>
+                    <p>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <span>3.5</span>
+                      <span>(7,500)</span>
+                    </p>
+                    <p>
+                      <b class="fs-5">$700 </b>
+                      <span
+                        class="text-decoration-line-through text-body-secondary fw-semibold"
+                        >$850
+                      </span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-around gap-2 border-top py-3"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/avatar-5.jpg" class="avatar" alt="" />
+                      <span>Brooklyn Simmons</span>
+                    </div>
+                    <span><ion-icon name="bookmark-outline"></ion-icon></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+          <span class="visually-hidden"
+            ><ion-icon name="arrow-back-circle-outline"></ion-icon
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next position-absolute top-50 start-100 translate-middle"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer
+      class="mt-5 container px-0 pb-1 text-body-secondary border-top pt-3"
+    >
+      <div class="row justify-content-between container align-items-center">
+        <p class="col-lg-3 text-capitalize col-md-12 text-md-center">
+          2022 geeks. all rights reserved.
+        </p>
+        <p class="col-lg-3 col-md-12 text-md-center">
+          <span class="px-2">Privacy</span><span class="px-2">Terms</span
+          ><span class="px-2">Feedback</span><span class="px-2">Support</span>
+        </p>
+      </div>
+    </footer>
 
     <script
       type="module"
@@ -173,55 +1379,3 @@
     ></script>
   </body>
 </html>
-
-<!-- <div class="card rounded-3" style="width: 18rem">
-  <img src="./assets/course-graphql.jpg" class="card-img-top" alt="..." />
-  <div class="card-body">
-    <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-    <p class="card-text d-flex align-items-center gap-2">
-      <ion-icon name="time-outline"></ion-icon>
-      <span>2h 40m</span>
-      <span><ion-icon name="cellular"></ion-icon></span>
-      <span>Advance</span>
-    </p>
-    <p>
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star"></ion-icon>
-      <ion-icon name="star-outline"></ion-icon>
-      <ion-icon name="star-outline"></ion-icon>
-      <span>2.5</span>
-      <span>(1,500)</span>
-    </p>
-    <p><b>$500 </b> $600</p>
-  </div>
-
-  <div
-    class="d-flex align-items-center justify-content-between gap-2 border-top py-3 px-4"
-  >
-    <div>
-      <img src="./assets/avatar-5.jpg " class="avatar" alt="" />
-      <span>Brooklyn Simmons</span>
-    </div>
-    <span><ion-icon name="bookmark-outline"></ion-icon></span>
-  </div>
-</div> -->
-
-<!-- 
-<div class="carousel-item">
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-
-        </div>
-    </div>
-</div>
-</div> -->
